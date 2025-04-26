@@ -23,6 +23,10 @@ app.put("/update-user", (req, res) => {
     }
 });
 
+app.get('/',(req,res)=>{
+    res.send("Connected");
+})
+
 app.delete("/delete-user", (req, res) => {
     const { email } = req.body;
 
